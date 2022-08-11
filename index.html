@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>wavesurfer.js </title>
+        <link rel="stylesheet" href="style.css" />
+        <!-- wavesurfer.js -->
+        <script src="https://unpkg.com/wavesurfer.js/dist/wavesurfer.js"></script>
+        <!-- Demo -->
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1> Waveforms</h1>
+            </div>
+            <audio id="test" src=""></audio>
+            <div id="demo">
+                <div id="waveform">
+                    <!-- Here be the waveform -->
+                </div>
+                <div class="controls">
+                    <button class="btn btn-primary" data-action="play">
+                        <i class="glyphicon-play"></i>
+                        Play
+                        /
+                        <i class="glyphicon-pause"></i>
+                        Pause
+                    </button>
+                </div>
+            </div>
+            <p class="lead" id="drop">
+                drop your
+                <i class="glyphicon-music"></i>
+                file here!
+            </p>
+          
+            <p class="input_" id="upload_">
+                <input type="file" id="ipt">
+            </p>
+
+        </div>
+
+   
+   <div class="bl">
+        <canvas id="fr" width="600" height="188" style="width:100%;height:100%;display:block"></canvas></div>
+	
+    
+    </body>
+</html>
